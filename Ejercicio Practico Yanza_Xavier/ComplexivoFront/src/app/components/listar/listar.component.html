@@ -1,0 +1,23 @@
+
+<div>
+<h2 >Lista de Usuarios</h2>
+	<br>
+	<table class="table table-bordered border-primary" style="max-width: 700px;">
+	<thead>
+      <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Nombre Completo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.userId }}</td>
+        <td>{{ usuario.username }}</td>
+        <td>{{ usuario.nombreCompleto }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-danger" (click)="eliminarToken()">Log out</button>
+</div>
+
